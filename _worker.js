@@ -7,6 +7,11 @@ export default {
         let new_request=new Request(url,request);
         return fetch(new_request);
       }
+      if (url.pathname.startsWith('/')) {
+        url.hostname="discord.com";
+        let new_request=new Request(url,request);
+        return fetch(new_request);
+      }
  
       // Otherwise, serve the static assets.
       return env.ASSETS.fetch(request);
