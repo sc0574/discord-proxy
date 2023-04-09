@@ -4,10 +4,7 @@ export default {
       if (url.pathname.startsWith('/')) {
         url.hostname="media.discordapp.net";
         let new_request=new Request(url,request);
-        return fetch(new_request, {
-    
-            referrer: ""
-        })
+        return fetch(new_request)
       }
  
       // Otherwise, serve the static assets.
