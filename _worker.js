@@ -6,9 +6,8 @@ export default {
         let new_request=new Request(url,request);
         return fetch(new_request, {
     
-        referrer: "https://media.discordapp.net", // 将referer置空
-        // referrerPolicy: 'no-referrer', 
-    } 
+            referrer: "https://media.discordapp.net"
+        } 
       }
  
       // Otherwise, serve the static assets.
