@@ -6,7 +6,7 @@ export default {
         let new_request=new Request(url,request);
         return fetch(new_request, {
     
-            referrer: "https://media.discordapp.net"
+            referrer: ""
         })
       }
  
