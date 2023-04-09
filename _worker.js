@@ -7,7 +7,7 @@ export default {
         return fetch(new_request, {
     
             referrer: "https://media.discordapp.net"
-        } 
+        })
       }
  
       // Otherwise, serve the static assets.
